@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sandstone</string>
+    <string name="home_page_title_lists">Lists</string>
+    <string name="home_page_title_profile">Profile</string>
+    <string name="title_tasks">tasks</string>
+    <string name="feature_install_error">Failed to install feature</string>
+    <string name="feature_install_error_dismiss">Dismiss</string>
+</resources>

@@ -1,0 +1,22 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tasks"
+    app:startDestination="@id/taskLists">
+    <fragment
+        android:id="@+id/taskLists"
+        app:moduleName="tasks"
+        android:name="hu.nemi.sandstone.features.tasks.ui.TaskListsFragment">
+        <action
+            android:id="@+id/action_taskLists_to_tasklist"
+            app:destination="@id/taskListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/taskListFragment"
+        app:moduleName="tasks"
+        android:name="hu.nemi.sandstone.features.tasks.ui.TaskListFragment" >
+        <argument
+            android:name="taskListId"
+            app:argType="string" />
+    </fragment>
+</navigation>

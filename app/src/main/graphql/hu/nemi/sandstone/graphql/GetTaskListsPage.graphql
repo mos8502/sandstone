@@ -1,0 +1,12 @@
+query TaskListPage($maxResults:Int, $pageToken:String) {
+    taskLists(maxResults: $maxResults, pageToken: $pageToken)  {
+        etag
+        nextPageToken
+        items {
+            id
+            etag
+            title
+            updated
+        }
+    }
+}

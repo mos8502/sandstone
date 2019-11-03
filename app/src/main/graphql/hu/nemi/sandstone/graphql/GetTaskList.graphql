@@ -1,0 +1,18 @@
+query GetTaskList($taskListId: String!) {
+    taskList(id: $taskListId) {
+        id
+        etag
+        title
+        updated
+        tasks {
+            id
+            etag
+            title
+            updated
+            notes
+            status
+            due
+            completed
+        }
+    }
+}
